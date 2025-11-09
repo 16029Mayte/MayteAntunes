@@ -1,0 +1,517 @@
+/*BODY*/
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+/*MENU*/
+
+.menu{
+    background-color: #007C5A;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 8px 20px 8px 20px; 
+    height: 60px; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin-left: 40px; 
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline; 
+}
+
+
+.logo img {
+    height: 60px; 
+    display: block;
+    margin-left: 6; 
+}
+
+/*HERO*/
+
+.hero {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 100px 5px;
+  margin: 5px 10px 10px 8px;
+}
+
+.hero-image img {
+  width: 100%;     
+  max-width: 880px;  
+  object-fit: cover;
+  margin-top: -60px;
+  margin-right: 80px;
+  border-radius: 8px;
+}
+
+.hero-text {
+  position: relative;
+  top: -30px;
+  margin-left: 20px;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 50px;         
+  color: #007C5A;         
+  font-weight: 700;        
+  margin: 0;
+  line-height: 1.2;
+  margin-top: -25px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    color:#007C5A;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #c41a04;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8a1000
+}
+
+/*SOBRE A SEMANA DA INCLUSÃO*/
+.sobre {
+  text-align: center;
+  padding: 10px 120px 80px 120px;
+  background-color: #007C5A;
+}
+
+.sobre h2 {
+  color:#ffffff; 
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px; 
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto 60px auto; 
+}
+
+
+/*SECÇÃO PORQUÊ PARTICIPAR*/
+.porque-participar {
+    text-align: center;
+    padding: 70px 120px 20px 120px;
+}
+
+.porque-participar h2 {
+    color: #007C5A;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.razoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+
+.razao {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.razoes-section {
+    text-align: center; 
+    position: relative;
+    z-index: 2
+}
+
+
+.razao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+
+.razao h3 {
+    color: #007C5A;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.razao p {
+    color: #444;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+.razao img {
+    width: 60px;              
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto; 
+}
+
+/*AS 4 CONDIÇÕES*/
+.condicoes {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 60px 40px;
+  overflow: visible;
+}
+
+.condicoes h2 {
+  color: #007C5A;
+  font-size: 35px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.condicoes-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: nowrap; 
+  overflow: visible;
+  padding-bottom: 10px;
+}
+
+.condicao-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 22%; 
+  min-width: 200px; 
+  max-width: 230px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+}
+
+
+.condicao-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.condicao-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.condicao-card h3 {
+  color: #007C5A;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.condicao-card p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: auto;
+}
+
+
+.btn-condicao {
+  display: inline-block;
+  align-self: center;
+  background-color: #007C5A;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.btn-condicao:hover {
+  background-color: #005f46;
+}
+
+
+/*SECÇÃO PROGRAMA DA SEMANA*/
+.programa {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.programa h2 {
+  color: #007C5A;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.agenda {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.dia {
+  position: relative;
+  background-color: #007C5A;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dia:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.dia img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.agenda .dia {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #007C5A;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.agenda .dia img {
+  width: 180px;         
+  height: auto;         
+  border-radius: 8px;
+  object-fit: contain;  
+  flex-shrink: 0;       
+}
+
+
+.conteudo h3 {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.conteudo p {
+  color: #fff;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+
+/*SECÇÃO INSCRIÇÃO*/
+.inscricao {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.inscricao h2 {
+    color: #007C5A;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inscricao p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.form-inscricao {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-inscricao label {
+    font-weight: 600;
+    color: #007C5A;
+}
+
+.form-inscricao input {
+    padding: 12px;
+    border: 1px solid #007C5A;
+    border-radius: 8px;
+}
+
+.form-inscricao button {
+    margin-top: 20px;
+    background-color: #007C5A;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-inscricao button:hover {
+    background-color: #005b44;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #007C5A;
+  color:#ffffff;
+  padding: 50px 80px;
+}
+
+.footer-colunas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.coluna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.coluna h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.coluna a {
+  color: #cceadd;
+  text-decoration: none;
+}
+
+.coluna a:hover {
+  color: white;
+}
+
+.sns-logo {
+  margin-top: 15px;
+  width: 150px;
+  height: auto;
+}
+
+.copy {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+
+/*ADAPTAÇÃO PARA MOBILE*/
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;       
+    text-align: center;        
+    padding: 50px 20px;
+  }
+
+  .hero-text {
+    text-align: center;        
+    margin: 0;
+    top: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;          
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 18px;          
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    margin: 0 auto;            
+    display: inline-block;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    margin: 20px 0 0 0;        
+  }
+
+  .razoes-container,
+  .condicoes-container {
+    flex-wrap: wrap;
+  }
+
+  .razao,
+  .condicao-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu a {
+    margin: 10px 0;
+  }
+
+  .sobre,
+  .porque-participar {
+    padding: 50px 20px;
+  }
+}
